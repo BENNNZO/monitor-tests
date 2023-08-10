@@ -8,6 +8,7 @@ export default function Home() {
     return (
         <main>
             <button onClick={() => push("screen-tearing")} className="px-2 py-1 bg-white border border-black">Screen Tearing Test</button>
+            <button onClick={() => push("black-light")} className="px-2 py-1 bg-white border border-black">Black light Test</button>
         </main>
     )
 }

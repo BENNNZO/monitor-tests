@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 export default function page() {
-    const WIDTH = 50
+    const WIDTH = 500
     
     const [screenDim, setScreenDim] = useState({ x: 0, y: 0 })
     const [tileAmount, setTileAmount] = useState(5)
@@ -30,7 +30,7 @@ export default function page() {
                         className={`${i % 2 === 0 ? "bg-black" : "bg-white"} h-screen`} style={{ width: `${WIDTH}px` }}
                         initial={{ x: -WIDTH }}
                         animate={{ x: WIDTH }}
-                        transition={{ ease: "linear", repeat: Infinity, duration: 0.1, repeatType: "mirror" }}
+                        transition={{ ease: "linear", repeat: Infinity, duration: 2, repeatType: "mirror" }}
                     >
 
                     </motion.div>
