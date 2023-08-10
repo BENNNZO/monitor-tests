@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={inter.className}>
-                <button className='absolute top-0 left-0 bg-white border border-black rounded-sm px-2 py-1' onClick={() => push("/")}>HOME</button>
+                <button className='absolute top-2 shadow-md z-10 left-2 bg-white border border-black rounded-sm px-2 py-1' onClick={() => push("/")}>HOME</button>
                 {children}
             </body>
         </html>
